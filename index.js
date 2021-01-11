@@ -7,8 +7,7 @@ function randomUnicode() {
     document.body.innerHTML = '';
     var unicode;
     if (JSON.parse(txt.value).isInterval == 'true') {
-        setInterval(
-        function randomUnicode() {
+        setInterval(() => {
             unicode = String.fromCharCode(Math.floor(Math.random() * 65535));
             document.body.innerHTML = unicode;
         }, 1000)
